@@ -1,6 +1,0 @@
-git pull fraud master
-git add .
-git commit -m "degisiklik"
-git push -u fraud master
-
-
