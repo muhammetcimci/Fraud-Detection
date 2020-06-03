@@ -1,6 +1,10 @@
 # Fraud-Detection
 
-1. ne projesi yaptık? yarışmanın amacı neydi? 
+1. Bu çalışma, Veri Bilimi Okulu tarafından organize edilen Data Science Bootcamp eğitimini bitirme projesi olarak; Muhammed Çakmak, İsmail Kaya, Muhammed Cimci, Ümit Ceylan, Berkan Acar ve Mert Ozan İnal' ın içinde bulunduğu 6 kişilik bir ekip tarafından yapıldı. 
+
+Çalışmanın verileri 2019 yılı september ve october ayları arasında Kaggle platformunda IEEE-CIS organizasyonu tarafından düzenlenen Fraud Detection yarışmasından alındı ve kurduğumuz modellerin başarısı yine bu yarışma çerçevesinde test edildi. 
+
+Muhammed Çakmak, İsmail Kaya, Muhammed Cimci, Ümit Ceylan, Berkan Acar ve Mert Ozan İnal' ın katkılarıyla yaptığımız verisiyle ilgili çalışmalarımızın özetini aşağıda açıklamış olacağız. yarışmanın amacı neydi? 
 
 Can you detect fraud from customer transactions?
 In this competition you are predicting the probability 
