@@ -4,20 +4,14 @@
 
 Çalışmanın verileri 2019 yılı september ve october ayları arasında Kaggle platformunda IEEE-CIS organizasyonu tarafından düzenlenen Fraud Detection yarışmasından alındı ve kurduğumuz modellerin başarısı yine bu yarışma çerçevesinde test edildi. 
 
-Muhammed Çakmak, İsmail Kaya, Muhammed Cimci, Ümit Ceylan, Berkan Acar ve Mert Ozan İnal' ın katkılarıyla yaptığımız verisiyle ilgili çalışmalarımızın özetini aşağıda açıklamış olacağız. yarışmanın amacı neydi? 
+Muhammed Çakmak, İsmail Kaya, Muhammed Cimci, Ümit Ceylan, Berkan Acar ve Mert Ozan İnal' ın katkılarıyla yaptığımız çalışmalarımızın özetini aşağıda açıklamış olacağız. 
 
-Can you detect fraud from customer transactions?
-In this competition you are predicting the probability 
-that an online transaction is fraudulent, as denoted by the binary target isFraud.
+Amacımız müşteri işlemlerinin sahtekarlık olup olmadığını tahmin etmek.
 
-Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
-The data is broken into two files identity and transaction, which are joined by TransactionID. 
-Not all transactions have corresponding identity information.
+Modelin başarısı yarışma yetkilileri tarafından, öngörülen olasılık ile gözlenen hedef arasındaki ROC eğrisi altında kalan alan üzerinden değerlendirilir.
 
+veriler birbirlerine transactionID değişkeni ile bağlanabilen iki tabloda sunulmuştur.
 
-# Muhammed Çakmak, İsmail Kaya, Mert Ozan İnal, Muhammed Cimci, Ümit Ceylan, Berkan Acar ile ortak bir çalışma. 
-
-#Projeyi yarışma amaçlı katılmadık. bir eğitim kapsamında bitirme projesi olarak yaptık.
 
 Final modeli oluşturmak için modeli eğitirken, eğitim ve test verilerinin toplam hacmi 5 GB’ ın üstündeydi.
 Tabloları birleştirip veriyi manipüle etmeye başladığımızda eğitim verimizde; 590.540 gözlem – 434 değişken,
