@@ -2,29 +2,46 @@
 
 1. Bu çalışma, Veri Bilimi Okulu tarafından organize edilen Data Science Bootcamp eğitimini bitirme projesi olarak; Muhammed Çakmak, İsmail Kaya, Muhammed Cimci, Ümit Ceylan, Berkan Acar ve Mert Ozan İnal' ın içinde bulunduğu 6 kişilik bir ekip tarafından yapıldı. 
 
-Çalışmanın verileri 2019 yılı september ve october ayları arasında Kaggle platformunda IEEE-CIS organizasyonu tarafından düzenlenen Fraud Detection yarışmasından alındı ve kurduğumuz modellerin başarısı yine bu yarışma çerçevesinde test edildi. 
+Çalışmanın verileri 2019 yılı september ve october ayları arasında Kaggle platformunda IEEE-CIS organizasyonu tarafından düzenlenen Fraud Detection yarışmasından alındı. 
+
+Modelin başarısı yarışmanın başarı metriğine göre, öngörülen olasılık ile gözlenen hedef arasındaki ROC eğrisi altında kalan alan üzerinden değerlendirildi.
 
 Muhammed Çakmak, İsmail Kaya, Muhammed Cimci, Ümit Ceylan, Berkan Acar ve Mert Ozan İnal' ın katkılarıyla yaptığımız çalışmalarımızın özetini aşağıda açıklamış olacağız. 
 
-Amacımız müşteri işlemlerinin sahtekarlık olup olmadığını tahmin etmek.
+Amacımız müşteri işlemlerinin sahtekarlık olup olmadığını tahmin etmek. (detaylandırılabilir)
 
-Modelin başarısı yarışma yetkilileri tarafından, öngörülen olasılık ile gözlenen hedef arasındaki ROC eğrisi altında kalan alan üzerinden değerlendirilir.
+-------------
 
-veriler birbirlerine transactionID değişkeni ile bağlanabilen iki tabloda sunulmuştur.
+Using the data, I analyzed factors that correlated with loans being repaid on time, and did some exploratory visualization and analysis.  I then created a model that predicts the chance that a loan will be repaid given the data surfaced on the LendingClub site.  This model could be useful for potential lenders trying to decide if they should fund a loan.  You can see the exploratory data analysis in the `Exploration.ipynb` notebook above.  You can see the model code and explanations in the `algo` folder.
 
 
-Final modeli oluşturmak için modeli eğitirken, eğitim ve test verilerinin toplam hacmi 5 GB’ ın üstündeydi.
-Tabloları birleştirip veriyi manipüle etmeye başladığımızda eğitim verimizde; 590.540 gözlem – 434 değişken,
-test verimizde ise 506.691 gözlem – 433 değişken vardı.
+Verileri kullanarak, zamanında geri ödenen kredilerle ilişkili faktörleri analiz ettim ve bazı keşifsel görselleştirme ve analizler yaptım. Daha sonra LendingClub sitesinde ortaya çıkan veriler göz önüne alındığında bir kredinin geri ödenme şansını tahmin eden bir model oluşturdum. Bu model, bir krediyi finanse edip etmemeye karar vermeye çalışan potansiyel kredi verenler için yararlı olabilir. Keşifsel veri analizini yukarıdaki `Exploration.ipynb` not defterinde görebilirsiniz. Model kodunu ve açıklamaları `algo` klasöründe görebilirsiniz.
 
-# •	Dosya hacmini küçülttük. sonucta ... kadar gözlem, ... değişken oldu ve dosya boyutu memory reduce yapılarak ... gb boyutuna indirildi.
+- eksik verileri -1 ile neden doldurduk, datanın hepsini pozitife çevirme politikasının nedeni.
 
-•	Eksik verileri – uç değerleri – korelasyonları basit düzeyde incelemek.
+- encoding yöntemleri (factorize kullanıldı)
 
-•	Tüm bu işlemler sonunda korelasyonları inceleyerek 0.85-0.90 üstü korelasyonlu olan değişkenlerin 
-birini veri setinden çıkarmak (regresyon problemi için çoklu doğrusal bağlantıyı engellemek).
+- frequence encoding
 
-# model kısnı
+- feature engineering 
+
+
+------------
+Some bullet points with interesting observations you found in exploration
+
+- veriler birbirlerine transactionID değişkeni ile bağlanabilen iki tabloda sunulmuştur. veri incelendiğinde;
+- verinini 6 aylık zaman serisi olduğu, nan değerler görselleştirildiğinde, aynı kaynaktan gelen veya farklı nedenlerden dolayı bazı değişkenlerde nan paterni yakaladık. oluşan pattern gruplarının kendi aralarındaki korelasyonlarına göre boyut azaltma işlemleri yapıldı. burada dikkatimizi tuhaf olarak v sütunlarının yanında bazı d ve id sütunlarının da bu patternlerde elendiğini gördük. bunu aynı bilgiyi taşıyan sütunları elemek (çoklu doğrusal bağlantı problemini engellemek). kategorik değişkenlerden user id üretip bunlar üzerinden nümerik değişkenlerin aggregationları yapıldı. transectiondt gün ay ve yıla dünuştürülerek kullanıldı. ... işlemleri yapıldı.
+
+
+daha sonra user idler ... nedenlerden dolayı drop edildi.
+
+-----
+
+Any interesting charts or diagrams you created
+
+-----
+
+Information about the model, such as algorithm
 
 •	Hangi modeller kullanılacağını belirlemek.
 •	En uygun model belirleyerek parametre ayarlamalarını yapmak, modeli geliştirmek.
@@ -36,12 +53,29 @@ birini veri setinden çıkarmak (regresyon problemi için çoklu doğrusal bağl
 göstermesinden dolayı kategorik feature özelliği kullanıldı.
 - başarı metrikleri denendi.
 
+------
 
-- encoding yöntemleri
-- feature engineering yöntemleri
-- değişken eleme, çıkarma, boyut düşürme, korelasyon vs. yöntemleri
-- Featureları 6 kişiye paylaştırıp detaylı inceleme yaptık. feature lar ile ilgili hareket tarzı geliştirdik.
-- Feature engineering yöntemleri geliştirdik.
+Error rates and other information about the predictions
+
+- dengesiz veri örneği olduğu için doğru başarı metriğinin kullanılması gerekliydi. burada önemli olan yani hedef fraud işlemlerinin doğru tespit edilmesi. yani tp oranının artırılması.
+
+-----
+
+Any notes about real-world usage of the model
+
+- bankacılık sektörü için kullanılır.
+
+
+-------
+
+
+Final modeli oluşturmak için modeli eğitirken, eğitim ve test verilerinin toplam hacmi 5 GB’ ın üstündeydi.
+Tabloları birleştirip veriyi manipüle etmeye başladığımızda eğitim verimizde; 590.540 gözlem – 434 değişken,
+test verimizde ise 506.691 gözlem – 433 değişken vardı.
+
+# •	Dosya hacmini küçülttük. sonucta ... kadar gözlem, ... değişken oldu ve dosya boyutu memory reduce yapılarak ... gb boyutuna indirildi.
+
+
 
 
 
