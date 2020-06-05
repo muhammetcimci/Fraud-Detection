@@ -17,6 +17,7 @@ There was a competition hosted by IEEE Computational Intelligence Society [(IEEE
 
 
 # Abstract
+
 Bu projede kullanılan data seti iki tanesi Train set  iki tanesi de test setw ait olmak üzere 4 farklı csv uzantılı dosya olarak verildi. Dosyaların kolon isimlerindeki yapısal hataları düzelttim ve dosyaları left join ile Train ve Test set olacak şekilde birleştirdim. Veri gizliliği açısından verilen değişkenlerin %95' inden fzlasının ismi gizli tutulduğu için değişik pattern belirleme teknikleri ile değişkenleri grupladım. Gruplanan değişkenlere EDA alanlizi uyguladıktan sonra transactionların ait olduğu herbir kişiyi belirlemek için userid tanımladım. Userid' den yola çıkarak feature engineering yaptım ve modele girmeden önce 590540 x 284 boyutunda bir Train set elde ettim. Elde ettiğim bu Train setini kullanarak XGBoost, LightGBM ve CatBoost gibi ağaç tabanlı modelleri kullanarak Test setini tahmin ettim. Bu modellerin hiperparametrelerini belirlemek için GridSearch yöntemini kullandım. Daha sonra modellere Kfold uygulayarak daha yüksek accuracy sonuçlarına ulaştım. Bu 3 modelin accuracy snuçları birbirlerine çok yakın çıktı. XGBoost, LightGBM ve CatBosst' un accurcy değerleri sırasıyla  %92, % 91 ve %90 olarak bulundu.
 
 
