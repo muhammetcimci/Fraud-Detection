@@ -8,12 +8,13 @@ This  project was handled to finish the Data Science Bootcamp training organized
 - Umit CEYLAN
 
 
-# SCOPE of The Project
+# Scope of The Project
 
 The aim of the project is benchmarking machine learning models on a challenging large-scale dataset to determine if transaction is fraus or not. 
 
 # About Data Set
-There was a competition hosted by IEEE Computational Intelligence Society [(IEEE-CIS)](https://cis.ieee.org/)
+There was a competition hosted by IEEE Computational Intelligence Society [(IEEE-CIS)](https://cis.ieee.org/) on [Kaggle](https://www.kaggle.com/). The data is originally coming from the world’s leading payment service company, [Vesta Corporation](https://trustvesta.com/). You can read about the fraud detection competition and find data set [here.](https://www.kaggle.com/c/ieee-fraud-detection). 
+
 
 
 1. Bu çalışma, Veri Bilimi Okulu tarafından organize edilen Data Science Bootcamp eğitimini bitirme projesi olarak; Muhammed Çakmak, İsmail Kaya, Muhammed Cimci, Ümit Ceylan, Berkan Acar ve Mert Ozan İnal' ın içinde bulunduğu 6 kişilik bir ekip tarafından yapıldı. 
