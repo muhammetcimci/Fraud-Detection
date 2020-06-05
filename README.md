@@ -13,7 +13,7 @@ This  project was handled to finish the Data Science Bootcamp training organized
 The aim of the project is benchmarking machine learning models on a challenging large-scale dataset to determine if transaction is fraus or not. 
 
 # About Data Set
-There was a competition hosted by IEEE Computational Intelligence Society [(IEEE-CIS)](https://cis.ieee.org/) on [Kaggle](https://www.kaggle.com/). The data is originally coming from the world’s leading payment service company, [Vesta Corporation](https://trustvesta.com/). You can read about the fraud detection competition and find data set [here.](https://www.kaggle.com/c/ieee-fraud-detection). 
+There was a competition hosted by IEEE Computational Intelligence Society [(IEEE-CIS)](https://cis.ieee.org/) on [Kaggle](https://www.kaggle.com/). The data is originally coming from the world’s leading payment service company, [Vesta Corporation](https://trustvesta.com/). You can read about the fraud detection competition and find the data set [here.](https://www.kaggle.com/c/ieee-fraud-detection). 
 
 
 
