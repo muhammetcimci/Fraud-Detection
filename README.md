@@ -1,7 +1,7 @@
 # Fraud-Detection
 
 This project was handled to finish the Data Science Bootcamp training organized by the VBO organization. In this project, we worked as a group, and it took one month. The group members are:
-@muhammet cimci
+
 - Berkan ACAR
 - Mert Ozan INAL
 - Muhammed CAKMAK
