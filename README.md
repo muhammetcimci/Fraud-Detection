@@ -3,7 +3,7 @@
 This project was handled to finish the Data Science Bootcamp training organized by the VBO organization. In this project, we worked as a group, and it took one month. The group members are:
 - Berkan ACAR
 - Mert Ozan INAL
-- Muhammed CIMCI
+- Muhammed CAKMAK
 - Ismail KAYA
 - Umit CEYLAN
 
