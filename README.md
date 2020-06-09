@@ -1,12 +1,12 @@
 # Fraud-Detection
 
 This project was handled to finish the Data Science Bootcamp training organized by the VBO organization. In this project, we worked as a group, and it took one month. The group members are:
-[Muhammet CIMCI](https://github.com/muhammetcimci)
-- Berkan ACAR
-- Mert Ozan INAL
-- Muhammed CAKMAK
-- Ismail KAYA
-- Umit CEYLAN
+
+- [Berkan Acar](https://github.com/berkarcan)
+- [Mert Ozan İnal](https://github.com/MOzanInal)
+- [ismail kaya](https://github.com/ismailkaya83)
+- [Muhammet CAKMAK](https://github.com/muhammet-cakmak)
+- [Ümit Ceylan]
 
 
 # Scope of The Project
