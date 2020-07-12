@@ -9,7 +9,7 @@ This project was handled to finish the Data Science Bootcamp training organized 
 - [Ümit Ceylan]
 
 
-# Scope of The Project
+
 
 The aim of the project is benchmarking machine learning models on a challenging large-scale dataset to determine if the transactions are fraud or not. 
 
